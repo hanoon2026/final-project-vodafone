@@ -1,0 +1,188 @@
+/* Import Fonts */
+@import url('https://fonts.cdnfonts.com/css/bristol');
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
+/* General Styling */
+html, body {
+    font-family: 'Public Sans', sans-serif;
+    background: url('homepage.png') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Bristol', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navbar Links */
+.navbar-nav {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffb3d2;
+}
+
+/* Hero Section */
+#section1 {
+    background-image: url("home2.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Large Heading */
+.hero-text {
+    font-family: 'Open Sauce One', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
+/* CTA Button */
+.btn-primary {
+    background-color: #c5dc49 !important;
+    border: none;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #fea7ef !important;
+    transform: scale(1.1);
+}
+
+/* Meet the Founders Section */
+#extra-content {
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: url('homepage2.png') no-repeat center center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Meet the Founders Title (NOW 100% FIXED TO BRISTOL) */
+#extra-content h2 {
+    font-family: 'Bristol', sans-serif !important; /* FIXED */
+    font-size: 50px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Founder Box Layout */
+.founders-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; /* Added spacing */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Founder Card */
+.founder-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Founder Card Hover */
+.founder-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Founder Image */
+.founder-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Founder Name (Now Aligned Properly) */
+.founder-name {
+    font-family: 'Open Sauce One', sans-serif;
+    font-size: 22px;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%; /* Ensures names align evenly */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Founder Description (Aligned & Adjusted) */
+.founder-description {
+    font-family: 'Open Sauce One', sans-serif;
+    font-size: 14px;
+    color: #555;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}

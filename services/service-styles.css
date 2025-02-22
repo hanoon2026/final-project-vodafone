@@ -1,0 +1,150 @@
+/* Import Fonts */
+@import url('https://fonts.cdnfonts.com/css/bristol');
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
+/* General Styling */
+body {
+    font-family: 'Public Sans', sans-serif;
+    background: url('Services.png') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Bristol', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navbar Links */
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+
+.nav-link:hover {
+    color: #ffb3d2;
+}
+
+/* Header */
+.services-header {
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.services-header h1 {
+    font-family: 'Bristol', sans-serif;
+    font-size: 50px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Spacing between Opportunities & Resources */
+#opportunities {
+    margin-bottom: 80px; /* Creates space before the Resources section */
+}
+
+/* Section Titles */
+h2 {
+    font-family: 'Bristol', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Align Titles */
+#opportunities h2, #resources h2 {
+    text-align: left; /* Resources now back to the left */
+}
+
+/* Boxes for Subheadings */
+.box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 180px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Smaller Text in Workshops Box */
+.box.workshops-box p {
+    font-size: 14px; /* Reduced font size for balance */
+}
+
+/* Headers in Bristol Font */
+h2, h3 {
+    font-family: 'Bristol', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #c5dc49;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #fea7ef;
+    transform: scale(1.1);
+}
+
+/* Icons */
+.icon {
+    font-size: 50px;
+    color: #e84393;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #c5dc49;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}

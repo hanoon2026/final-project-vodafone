@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bristol" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/open-sauce-one" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/x-icon"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="halfalogo.png" alt="Logo" class="logo-img">
+                <span class="logo-text ms-2">STEMinist</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../home page/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../services/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about us/index.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="below-navbar mt-5 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left">
+                        <h1>About Us</h1>
+                        <p>Throughout history, women in STEM have defied expectations, shattered barriers, and transformed the world—often without the recognition they deserved.</p>
+                        <p>Ada Lovelace, Hedy Lamarr, and Rosalind Franklin are not just names in history books; they are proof that innovation knows no gender.</p>
+                        <p>Our mission is to bridge the gender gap in science, technology, engineering, and mathematics by providing access to internships, scholarships, and industry connections.</p>
+                        <p>Join us in shaping a future where women thrive in STEM!</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right">
+                        <div class="slideshow-container">
+                            <section id="women" class="women-card">
+                                <div class="slideshow-container">
+                                    <div class="slide">
+                                        <img src="Mariecurie.jpg" alt="Marie Curie">
+                                        <h2>Marie Curie</h2>
+                                        <p>Pioneering physicist and chemist, known for her research on radioactivity.</p>
+                                    </div>
+                                    <div class="slide">
+                                        <img src="ada-lovelace.jpg" alt="Ada Lovelace">
+                                        <h2>Ada Lovelace</h2>
+                                        <p>Mathematician and writer, recognized as the first computer programmer.</p>
+                                    </div>
+                                    <div class="slide">
+                                        <img src="Katherine_Johnson_1983.jpg" alt="Katherine Johnson">
+                                        <h2>Katherine Johnson</h2>
+                                        <p>NASA mathematician whose calculations helped send astronauts to space.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inspiration" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="mission-box">
+                        <h2>How They Inspire STEMinist’s Mission</h2>
+                        <p>At STEMinist, we believe every girl should have the freedom to explore, create, and lead in STEM fields.</p>
+                        <ul>
+                            <li>We provide opportunities, mentorship, and support for young women who dare to dream.</li>
+                            <li>We foster a community where curiosity thrives, barriers break, and brilliance shines.</li>
+                            <li>We continue the legacy of Lovelace, Lamarr, and Franklin—because the future of STEM should be shaped by all minds, not just a few.</li>
+                        </ul>
+                        <p>STEMinist is more than a platform; it’s a movement. A movement where young women don’t just find their place in STEM—they redefine it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 0;
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+
+        showSlides(slideIndex); // Initialize the first slide
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

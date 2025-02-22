@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bristol" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/open-sauce-one" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="halfalogo.png" alt="Logo" class="logo-img">
+                <span class="logo-text ms-2">STEMinist</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../home page/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../services/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../about us/index.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container" id="contact">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Contact Us</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="d079c023-105e-4f10-bf98-6d6896183e73">
+                    <input type="text" name="name" placeholder="Enter your name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Enter your email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Leave a message" class="contact-inputs" required></textarea>
+                    <button type="submit" class="submit-btn">Submit <img src="images/submit-icon.png" alt=""></button>
+                </form>
+            </div>
+        </div>
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><span style="font-family: 'Bristol', sans-serif;">Email:</span> <a href="mailto:info@STEMinist.com"> info@STEMinist.com</a></p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/STEMinistOrg" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com/STEMinistOrg" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/STEMinistOrg" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .social-media a {
+            font-size: 40px; /* Increased size */
+            margin: 0 15px;
+            color: black; /* Changed to black */
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #555; /* Dark gray on hover */
+            transform: scale(1.2); /* Slightly increase size on hover */
+        }
+
+        .submit-btn {
+            background-color: #f2abeb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #f2abeb;
+        }
+    </style>
+</body>
+</html>
